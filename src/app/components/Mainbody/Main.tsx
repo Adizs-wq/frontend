@@ -202,7 +202,7 @@ export default function Main() {
             <div className="card">
               <div className={styles.testimonial}>
                 <div className={styles.testimonialContent}>
-                  <h3>&quot;You made it so simple&quot;</h3>
+                  <h3>You made it so simple;</h3>
                   <p>My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes and click save.</p>
                 </div>
                 <div className={styles.testimonialAuthor}>
@@ -224,8 +224,8 @@ export default function Main() {
             <div className="card">
               <div className={styles.testimonial}>
                 <div className={styles.testimonialContent}>
-                  <h3>&quot;Simply the best&quot;</h3>
-                  <p>Better than all the rest. I&apos;d recommend this product to beginners and advanced users who want a clean interface.</p>
+                  <h3>Simply the best</h3>
+                  <p>Better than all the rest. I would recommend this product to beginners and advanced users who want a clean interface.</p>
                 </div>
                 <div className={styles.testimonialAuthor}>
                   <div className={styles.testimonialAvatar}>
