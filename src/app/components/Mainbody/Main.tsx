@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './styles.module.css';
 
 export default function Main() {
@@ -9,25 +8,33 @@ export default function Main() {
       <section className={`${styles.hero} section`}>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1 className="text-center">Get things done by awesome remote team</h1>
-            <p className={`${styles.heroDescription} text-center text-large`}>
-              We share common trends and strategies for improving your rental income and making sure you stay in high demand.
+            <div className={styles.badge}>
+              <span>✨ New features available</span>
+            </div>
+            <h1>Get things done by awesome remote team</h1>
+            <p className={`${styles.heroDescription} text-large`}>
+              We share common trends and strategies for improving your rental income and making sure you stay in high demand. With lots of unique blocks, you can easily build a page without coding.
             </p>
             <div className={styles.heroActions}>
-              <button className={styles.button}>
+              <button className={styles.primaryButton}>
                 Get started for free
                 <svg className={styles.arrow} width="20" height="16" viewBox="0 0 20 16" fill="none">
                   <path d="M12.5 1L19 8L12.5 15M19 8H1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
-              <a href="/demos" className={styles.learnMore}>Learn more</a>
+              <button className={styles.secondaryButton}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M8 5L15 10L8 15V5Z" fill="currentColor"/>
+                </svg>
+                Watch demo
+              </button>
             </div>
           </div>
           
           <div className={styles.heroImage}>
             <div className={styles.mockup}>
               <img
-                src="session.svg"
+                src="/session.svg"
                 alt="Dashboard mockup"
                 className={styles.dashboardImage}
               />
@@ -39,6 +46,10 @@ export default function Main() {
       {/* Features Section */}
       <section className="section section-light">
         <div className="container">
+          <div className={styles.featuresHeader}>
+            <h2>Everything you need to manage projects</h2>
+            <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          </div>
           <div className="grid grid-3">
             <div className="card">
               <div className={styles.featureIcon}>
@@ -81,9 +92,23 @@ export default function Main() {
         <div className="container">
           <div className={styles.ctaSection}>
             <div className={styles.ctaContent}>
-              <h2>Getting started with Albino is easier than ever</h2>
-              <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-              <button className={styles.button}>
+              <h2>Getting started with Brainwave is easier than ever</h2>
+              <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta.</p>
+              <div className={styles.ctaFeatures}>
+                <div className={styles.ctaFeature}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                  </svg>
+                  <span>Unlimited projects</span>
+                </div>
+                <div className={styles.ctaFeature}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                  </svg>
+                  <span>No setup fees</span>
+                </div>
+              </div>
+              <button className={styles.primaryButton}>
                 Get started for free
                 <svg className={styles.arrow} width="20" height="16" viewBox="0 0 20 16" fill="none">
                   <path d="M12.5 1L19 8L12.5 15M19 8H1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -92,7 +117,7 @@ export default function Main() {
             </div>
             <div className={styles.ctaImage}>
               <img
-                src="Images.svg"
+                src="/Images.svg"
                 alt="Analytics dashboard"
                 className={styles.analyticsImage}
               />
@@ -106,16 +131,16 @@ export default function Main() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="stat-number">1M+</div>
-              <p>Customers visit Albino every month</p>
+              <div className="stat-number">10k+</div>
+              <p>Customers visit Brainwave every month to get their tasks done</p>
             </div>
             <div className="stat-item">
-              <div className="stat-number">93%</div>
-              <p>Satisfaction rate from our customers</p>
+              <div className="stat-number">99%</div>
+              <p>Satisfaction rate comes from our awesome customers</p>
             </div>
             <div className="stat-item">
               <div className="stat-number">4.9</div>
-              <p>Average customer ratings out of 5.00!</p>
+              <p>Average customer ratings we have got all over internet</p>
             </div>
           </div>
         </div>
@@ -125,14 +150,14 @@ export default function Main() {
       <section className="section">
         <div className="container">
           <div className={styles.processHeader}>
-            <h2 className="text-center">Manage your projects fast</h2>
-            <p className="text-center text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+            <h2>Manage your projects fast</h2>
+            <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
           </div>
           
           <div className={styles.processGrid}>
             <div className={styles.processImage}>
               <img
-                src="Sketch.svg"
+                src="/Sketch.svg"
                 alt="Project management interface"
                 className={styles.projectImage}
               />
@@ -170,39 +195,51 @@ export default function Main() {
       {/* Testimonials Section */}
       <section className="section section-light">
         <div className="container">
+          <div className={styles.testimonialsHeader}>
+            <h2>Don't just take our word for it</h2>
+            <p className="text-large">See what our customers are saying about us.</p>
+          </div>
           <div className="grid grid-2">
             <div className="card">
               <div className={styles.testimonial}>
-                <div className={styles.testimonialAvatar}>
-                  <img
-                    src="Corey.svg"
-                    alt="Corey Valdez"
-                    className={styles.avatar}
-                  />
+                <div className={styles.testimonialContent}>
+                  <h3>"You made it so simple"</h3>
+                  <p>My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes and click save.</p>
                 </div>
-                <h3>"You made it so simple"</h3>
-                <p>My new site is so much faster and easier to work with than my old site.</p>
                 <div className={styles.testimonialAuthor}>
-                  <h4>Corey Valdez</h4>
-                  <p>Founder at Zenix</p>
+                  <div className={styles.testimonialAvatar}>
+                    <img
+                      src="/Corey.svg"
+                      alt="Corey Valdez"
+                      className={styles.avatar}
+                    />
+                  </div>
+                  <div>
+                    <h4>Corey Valdez</h4>
+                    <p>Founder at Zenix</p>
+                  </div>
                 </div>
               </div>
             </div>
             
             <div className="card">
               <div className={styles.testimonial}>
-                <div className={styles.testimonialAvatar}>
-                  <img
-                    src="Ian.svg"
-                    alt="Ian Klein"
-                    className={styles.avatar}
-                  />
+                <div className={styles.testimonialContent}>
+                  <h3>"Simply the best"</h3>
+                  <p>Better than all the rest. I'd recommend this product to beginners and advanced users who want a clean interface.</p>
                 </div>
-                <h3>"Simply the best"</h3>
-                <p>Better than all the rest. I'd recommend this product to beginners.</p>
                 <div className={styles.testimonialAuthor}>
-                  <h4>Ian Klein</h4>
-                  <p>Digital Marketer</p>
+                  <div className={styles.testimonialAvatar}>
+                    <img
+                      src="/Ian.svg"
+                      alt="Ian Klein"
+                      className={styles.avatar}
+                    />
+                  </div>
+                  <div>
+                    <h4>Ian Klein</h4>
+                    <p>Digital Marketer</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,38 +251,56 @@ export default function Main() {
       <section className="section section-dark">
         <div className="container">
           <div className={styles.pricingHeader}>
-            <h2 className="text-center">Pricing & Plans</h2>
-            <p className="text-center text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+            <h2>Pricing & Plans</h2>
+            <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
           </div>
           
           <div className="grid grid-3">
             <div className="card card-dark">
               <div className={styles.pricingCard}>
-                <h4 className={styles.planName}>BASIC</h4>
-                <div className={styles.price}>$29</div>
-                <p className={styles.planDescription}>One time purchase</p>
-                <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                <button className={styles.button}>Get started for free</button>
+                <h4 className={styles.planName}>STARTER</h4>
+                <div className={styles.price}>$19</div>
+                <p className={styles.planDescription}>Per month</p>
+                <ul className={styles.planFeatures}>
+                  <li>Up to 5 projects</li>
+                  <li>10GB storage</li>
+                  <li>Email support</li>
+                  <li>Basic analytics</li>
+                </ul>
+                <button className={styles.planButton}>Get started</button>
               </div>
             </div>
             
             <div className="card card-dark">
-              <div className={styles.pricingCard}>
-                <h4 className={styles.planName}>STANDARD</h4>
+              <div className={`${styles.pricingCard} ${styles.popular}`}>
+                <div className={styles.popularBadge}>Most Popular</div>
+                <h4 className={styles.planName}>PROFESSIONAL</h4>
                 <div className={styles.price}>$49</div>
-                <p className={styles.planDescription}>One time purchase</p>
-                <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                <button className={styles.button}>Get started for free</button>
+                <p className={styles.planDescription}>Per month</p>
+                <ul className={styles.planFeatures}>
+                  <li>Unlimited projects</li>
+                  <li>100GB storage</li>
+                  <li>Priority support</li>
+                  <li>Advanced analytics</li>
+                  <li>Team collaboration</li>
+                </ul>
+                <button className={styles.planButton}>Get started</button>
               </div>
             </div>
             
             <div className="card card-dark">
               <div className={styles.pricingCard}>
-                <h4 className={styles.planName}>PREMIUM</h4>
+                <h4 className={styles.planName}>ENTERPRISE</h4>
                 <div className={styles.price}>$99</div>
-                <p className={styles.planDescription}>One time purchase</p>
-                <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                <button className={styles.button}>Get started for free</button>
+                <p className={styles.planDescription}>Per month</p>
+                <ul className={styles.planFeatures}>
+                  <li>Everything in Pro</li>
+                  <li>Unlimited storage</li>
+                  <li>24/7 phone support</li>
+                  <li>Custom integrations</li>
+                  <li>Advanced security</li>
+                </ul>
+                <button className={styles.planButton}>Contact sales</button>
               </div>
             </div>
           </div>
