@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
             <div>
               <h3>Still have questions?</h3>
-              <p>Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.</p>
+              <p>Can not find the answer you are looking for? Please chat to our friendly team.</p>
             </div>
           </div>
           <button className={styles.supportButton}>Get in touch</button>
