@@ -92,7 +92,7 @@ export default function Main() {
           <div className={styles.ctaSection}>
             <div className={styles.ctaContent}>
               <h2>Getting started with Brainwave is easier than ever</h2>
-              <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta.</p>
+              <p className="text-large">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
               <div className={styles.ctaFeatures}>
                 <div className={styles.ctaFeature}>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -195,14 +195,14 @@ export default function Main() {
       <section className="section section-light">
         <div className="container">
           <div className={styles.testimonialsHeader}>
-            <h2>Don't just take our word for it</h2>
+            <h2>Don&apos;t just take our word for it</h2>
             <p className="text-large">See what our customers are saying about us.</p>
           </div>
           <div className="grid grid-2">
             <div className="card">
               <div className={styles.testimonial}>
                 <div className={styles.testimonialContent}>
-                  <h3>"You made it so simple"</h3>
+                  <h3>&quot;You made it so simple&quot;</h3>
                   <p>My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes and click save.</p>
                 </div>
                 <div className={styles.testimonialAuthor}>
@@ -224,8 +224,8 @@ export default function Main() {
             <div className="card">
               <div className={styles.testimonial}>
                 <div className={styles.testimonialContent}>
-                  <h3>"Simply the best"</h3>
-                  <p>Better than all the rest. I'd recommend this product to beginners and advanced users who want a clean interface.</p>
+                  <h3>&quot;Simply the best&quot;</h3>
+                  <p>Better than all the rest. I&apos;d recommend this product to beginners and advanced users who want a clean interface.</p>
                 </div>
                 <div className={styles.testimonialAuthor}>
                   <div className={styles.testimonialAvatar}>
