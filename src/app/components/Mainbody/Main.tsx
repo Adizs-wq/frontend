@@ -202,7 +202,7 @@ export default function Main() {
             <div className="card">
               <div className={styles.testimonial}>
                 <div className={styles.testimonialContent}>
-                  <h3>You made it so simple;</h3>
+                  <h3>You made it so simple</h3>
                   <p>My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes and click save.</p>
                 </div>
                 <div className={styles.testimonialAuthor}>
