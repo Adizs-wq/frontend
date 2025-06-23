@@ -1,0 +1,287 @@
+.hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: var(--spacing-3xl) 0;
+}
+
+.heroContent {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.heroDescription {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: 16px 32px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.3);
+  text-transform: capitalize;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(99, 102, 241, 0.4);
+}
+
+.button:hover .arrow {
+  transform: translateX(4px);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  width: 20px;
+  height: 16px;
+}
+
+.learnMore {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.learnMore:hover {
+  color: var(--primary);
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-2xl);
+}
+
+.mockup {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.dashboardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  color: white;
+}
+
+.ctaSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.ctaContent h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.ctaContent p {
+  margin-bottom: var(--spacing-xl);
+}
+
+.ctaImage {
+  position: relative;
+}
+
+.analyticsImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.processHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.processHeader h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.processImage {
+  position: relative;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.processSteps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.stepContent h3 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonialAvatar {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.testimonialAuthor {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border);
+}
+
+.testimonialAuthor h4 {
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.testimonialAuthor p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.pricingHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.pricingHeader h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.pricingCard {
+  text-align: center;
+}
+
+.planName {
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-md);
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: var(--spacing-xs);
+}
+
+.planDescription {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pricingCard p {
+  margin-bottom: var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .heroActions {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .ctaSection,
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .processGrid {
+    text-align: center;
+  }
+  
+  .processImage {
+    order: -1;
+  }
+  
+  .step {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
